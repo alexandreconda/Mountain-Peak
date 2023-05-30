@@ -1,0 +1,2250 @@
+2023-01-31 10:02:22	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:04:57	172.18.0.1	error	[0]	Parameter service is required for pdo driver pgsql
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php	235
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jDbParameters->_checkRequirements()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php : 250
+	1	jDbParameters->getPDODsn()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php : 68
+	2	jDbParameters->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/profiles/jdb/jdb.profiles.php : 17
+	3	jdbProfilesCompiler->consolidate()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfilesCompilerPlugin.class.php : 74
+	4	jProfilesCompilerPlugin->getProfiles()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfilesCompiler.class.php : 67
+	5	jProfilesCompiler->compile()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 43
+	6	jProfiles::loadProfiles()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 71
+	7	jProfiles::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 143
+	8	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	9	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	10	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	11	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:04:59	172.18.0.1	error	[0]	Parameter service is required for pdo driver pgsql
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php	235
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jDbParameters->_checkRequirements()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php : 250
+	1	jDbParameters->getPDODsn()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbParameters.class.php : 68
+	2	jDbParameters->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/profiles/jdb/jdb.profiles.php : 17
+	3	jdbProfilesCompiler->consolidate()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfilesCompilerPlugin.class.php : 74
+	4	jProfilesCompilerPlugin->getProfiles()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfilesCompiler.class.php : 67
+	5	jProfilesCompiler->compile()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 43
+	6	jProfiles::loadProfiles()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 71
+	7	jProfiles::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 143
+	8	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	9	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	10	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	11	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:06:44	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:06:46	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:07:23	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:07:25	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:08:14	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:08:53	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:17:12	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:19:42	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:21:10	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:21:11	172.18.0.1	error	[0]	could not find driver
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php	98
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	PDO->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbPDOConnection.class.php : 98
+	1	jDbPDOConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 181
+	2	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	3	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	4	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:29:11	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:36:31	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:39:14	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 10:39:14	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:09:46	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:09:46	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:31:02	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:31:02	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:28)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:31:24	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:42:58	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:49:11	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:50:30	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:50:33	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:55:09	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:40)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 11:55:09	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:40)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:01:54	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:40)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:01:54	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:40)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 277
+	2	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:02:11	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:05:09	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:05:12	172.18.0.1	error	[405]	jDb:  posgresql extension is not installed in PHP
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	36
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	1	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	2	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	3	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	4	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	5	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:21:17	172.18.0.1	warning	[2]	pg_pconnect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	164
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_pconnect()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 164
+	1	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	2	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	3	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	4	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	5	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	6	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	7	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	8	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	9	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:21:17	172.18.0.1	error	[402]	error during the connection localhost
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	180
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	1	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	2	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	3	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	4	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	5	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	6	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	7	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	8	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:21:19	172.18.0.1	warning	[2]	pg_pconnect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	164
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_pconnect()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 164
+	1	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	2	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	3	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	4	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	5	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	6	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	7	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	8	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	9	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:21:19	172.18.0.1	error	[402]	error during the connection localhost
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	180
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	1	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	2	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	3	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	4	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	5	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	6	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	7	jDb::getConnection()	/var/www/html/app/modules/core/controllers/default.classic.php : 19
+	8	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:26:21	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: SELECT value core.test
+                         ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:26:21	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near "."
+LINE 1: SELECT value core.test
+                         ^(SELECT value core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 12:27:05	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:00:51	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  relation &quot;core.test&quot; does not exist
+LINE 1: SELECT value FROM core.test
+                          ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:00:51	172.18.0.1	error	[403]	invalid query (ERROR:  relation "core.test" does not exist
+LINE 1: SELECT value FROM core.test
+                          ^(SELECT value FROM core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:00:53	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  relation &quot;core.test&quot; does not exist
+LINE 1: SELECT value FROM core.test
+                          ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:00:53	172.18.0.1	error	[403]	invalid query (ERROR:  relation "core.test" does not exist
+LINE 1: SELECT value FROM core.test
+                          ^(SELECT value FROM core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:28:54	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  relation &quot;core.test&quot; does not exist
+LINE 1: SELECT value FROM core.test
+                          ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:28:54	172.18.0.1	error	[403]	invalid query (ERROR:  relation "core.test" does not exist
+LINE 1: SELECT value FROM core.test
+                          ^(SELECT value FROM core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:28:55	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  relation &quot;core.test&quot; does not exist
+LINE 1: SELECT value FROM core.test
+                          ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:28:55	172.18.0.1	error	[403]	invalid query (ERROR:  relation "core.test" does not exist
+LINE 1: SELECT value FROM core.test
+                          ^(SELECT value FROM core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:44:27	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  relation &quot;core.test&quot; does not exist
+LINE 1: SELECT value FROM core.test
+                          ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:44:27	172.18.0.1	error	[403]	invalid query (ERROR:  relation "core.test" does not exist
+LINE 1: SELECT value FROM core.test
+                          ^(SELECT value FROM core.test))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/default.classic.php : 21
+	2	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:51:23	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:51:23	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:25)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:51:23	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:25)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:52:10	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:52:10	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:52:10	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:52:10	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:52:10	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	24
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:35)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:53:08	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:35)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:55:37	172.18.0.1	warning	[2]	Array to string conversion
+	at: /var/www/html/app/modules/core/controllers/default.classic.php	35
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:55:37	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:35)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	185
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 185
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 14:55:37	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/controllers/default.classic.php:35)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php	192
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jResponse.class.php : 192
+	1	jResponse->sendHttpHeaders()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseJson.class.php : 52
+	2	jResponseJson->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:10:09	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:10:12	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:10:30	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:12:39	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:13:21	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:13:23	172.18.0.1	error	[18]	Unknown module in the selector "app~main"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	65
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	2	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	3	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	4	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	5	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:13:54	172.18.0.1	error	[17]	The selector "core~main" doesn't correspond to a resource of type: "template"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	136
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorTpl->findPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 90
+	1	jSelectorTpl->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	2	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 56
+	3	jSelectorTpl->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 101
+	4	jTpl->meta()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseHtml.class.php : 251
+	5	jResponseHtml->output()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 279
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:22:52	172.18.0.1	error	[0]	Too few arguments to function jTpl::assignZone(), 1 passed in /var/www/html/app/modules/core/controllers/default.classic.php on line 17 and at least 2 expected
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php	50
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 17
+	1	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	2	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:28:03	172.18.0.1	error	[17]	The selector "core~test" doesn't correspond to a resource of type: "zone"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php	104
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorModule->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 365
+	2	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	3	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	4	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:28:04	172.18.0.1	error	[17]	The selector "core~test" doesn't correspond to a resource of type: "zone"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php	104
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorModule->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 365
+	2	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	3	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	4	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:31:15	172.18.0.1	error	[17]	The selector "core~test" doesn't correspond to a resource of type: "zone"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php	104
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorModule->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 365
+	2	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	3	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	4	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:31:17	172.18.0.1	error	[17]	The selector "core~test" doesn't correspond to a resource of type: "zone"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php	104
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorModule->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 46
+	1	jSelectorModule->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 365
+	2	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	3	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	4	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	5	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	6	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:31:34	172.18.0.1	error	[0]	Class "crudZone" not found
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php	372
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	1	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	2	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	3	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 17:31:34	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/zones/crud.zone.php:1)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	325
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 325
+	1	jResponseBasicHtml->outputErrors()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 460
+	2	jCoordinator->handleError()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 427
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2023-01-31 17:31:34	172.18.0.1	warning	[2]	Cannot modify header information - headers already sent by (output started at /var/www/html/app/modules/core/zones/crud.zone.php:1)
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	326
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	header()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 326
+	1	jResponseBasicHtml->outputErrors()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 460
+	2	jCoordinator->handleError()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 427
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2023-01-31 17:53:45	172.18.0.1	error	[18]	Unknown module in the selector "sommets~default:get@classic"
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorAct.class.php	75
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jSelectorAct->_createPath()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/selector/jSelectorAct.class.php : 63
+	1	jSelectorAct->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jUrl.class.php : 192
+	2	jUrl::get()	/var/www/html/app/modules/core/zones/crud.zone.php : 9
+	3	crudZone->_prepareTpl()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 282
+	4	jZone->_createContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 217
+	5	jZone->getContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 373
+	6	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	7	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	8	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	9	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 19:07:09	172.18.0.1	error	[0]	Undefined constant "toto"
+	at: /var/www/html/app/modules/core/zones/crud.zone.php	32
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	crudZone->_prepareTpl()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 282
+	1	jZone->_createContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 217
+	2	jZone->getContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 373
+	3	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	4	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	5	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	6	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	7	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 19:19:51	172.18.0.1	error	[300]	In the template /var/www/html/app/modules/core/templates/crud.tpl, invalid syntax on tag 
+    jQuery.ajax
+    (
+        urlAjaxForm,
+        {
+            complete: function(jqXHR, textStatus) {
+                $("#listesommets").html(jqXHR.responseText);
+            
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTplCompiler.class.php	153
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	jTplCompiler->doError1()	/var/www/html/vendor/jelix/castor/lib/Castor/CompilerCore.php : 267
+	1	Jelix\Castor\CompilerCore->_callback()	[php] : 
+	2	preg_replace_callback()	/var/www/html/vendor/jelix/castor/lib/Castor/CompilerCore.php : 242
+	3	Jelix\Castor\CompilerCore->compileContent()	/var/www/html/vendor/jelix/castor/lib/Castor/CompilerCore.php : 187
+	4	Jelix\Castor\CompilerCore->compileString()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTplCompiler.class.php : 63
+	5	jTplCompiler->compile()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jIncluder.class.php : 134
+	6	jIncluder::inc()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 159
+	7	jTpl->getTemplate()	/var/www/html/vendor/jelix/castor/lib/Castor/CastorCore.php : 283
+	8	Jelix\Castor\CastorCore->_fetch()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 181
+	9	jTpl->fetch()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 287
+	10	jZone->_createContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 217
+	11	jZone->getContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 373
+	12	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	13	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	14	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	15	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	16	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 20:32:36	172.18.0.1	warning	[2]	Undefined array key "get"
+	at: /var/www/html/app/temp/www/compiled/templates/modules/core/crud_html_t_15.php	14
+	url: /
+	GET: array (   'module' => 'core',   'action' => 'default:index', )
+	referer: Unknown referer
+
+	0	template_5ff7ee6fc9b77755407779e26f668ff4()	/var/www/html/vendor/jelix/castor/lib/Castor/CastorCore.php : 290
+	1	Jelix\Castor\CastorCore->_fetch()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 181
+	2	jTpl->fetch()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 287
+	3	jZone->_createContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 217
+	4	jZone->getContent()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 373
+	5	jZone::_callZone()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jZone.class.php : 114
+	6	jZone::get()	/var/www/html/vendor/jelix/jelix/lib/jelix/tpl/jTpl.class.php : 52
+	7	jTpl->assignZone()	/var/www/html/app/modules/core/controllers/default.classic.php : 20
+	8	defaultCtrl->index()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:31:54	172.18.0.1	error	[0]	Call to a member function output() on string
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php	279
+	url: /index.php/sommets/get
+	GET: array (   'module' => 'core',   'action' => 'sommets:get', )
+	referer: http://localhost/
+
+	0	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:44:52	172.18.0.1	error	[0]	Call to a member function output() on string
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php	279
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:45:05	172.18.0.1	error	[0]	Call to a member function output() on string
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php	279
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:56:43	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;table&quot;
+LINE 1: INSERT INTO table (nom_colonne_1, nom_colonne_2, ...
+                    ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:56:43	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near "table"
+LINE 1: INSERT INTO table (nom_colonne_1, nom_colonne_2, ...
+                    ^(INSERT INTO table (nom_colonne_1, nom_colonne_2, ...
+ VALUES ('valeur 1', 'valeur 2', ...)))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:58:16	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;valeur 2&quot;
+LINE 2:  VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')
+                             ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:58:16	172.18.0.1	error	[403]	invalid query (ERROR:  invalid input syntax for type numeric: "valeur 2"
+LINE 2:  VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')
+                             ^(INSERT INTO core.sommets (nom, latitude, longitude, altitude)
+ VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:58:23	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;valeur 2&quot;
+LINE 2:  VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')
+                             ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 21:58:23	172.18.0.1	error	[403]	invalid query (ERROR:  invalid input syntax for type numeric: "valeur 2"
+LINE 2:  VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')
+                             ^(INSERT INTO core.sommets (nom, latitude, longitude, altitude)
+ VALUES ('valeur 1', 'valeur 2', 'valeur 3', 'valeur 4')))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 30
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 22:04:22	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-01-31 22:04:22	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^(
+            INSERT INTO core.sommets (, latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:18:48	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:18:48	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^(
+            INSERT INTO core.sommets (, latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:19:36	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:19:36	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^(
+            INSERT INTO core.sommets (, latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:21:50	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:21:50	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 2:             INSERT INTO core.sommets (, latitude, longitude,...
+                                              ^(
+            INSERT INTO core.sommets (, latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:35:09	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:             INSERT INTO core.sommets (  , latitude, longitud...
+                                                ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:35:09	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 2:             INSERT INTO core.sommets (  , latitude, longitud...
+                                                ^(
+            INSERT INTO core.sommets (  , latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:35:46	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  column &quot;dqddq&quot; of relation &quot;sommets&quot; does not exist
+LINE 2:             INSERT INTO core.sommets ( dqddq , latitude, lon...
+                                               ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 37
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:35:46	172.18.0.1	error	[403]	invalid query (ERROR:  column "dqddq" of relation "sommets" does not exist
+LINE 2:             INSERT INTO core.sommets ( dqddq , latitude, lon...
+                                               ^(
+            INSERT INTO core.sommets ( dqddq , latitude, longitude, altitude)
+            VALUES ('nom', 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 37
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:42:32	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  column &quot;dqddq&quot; does not exist
+LINE 3:             VALUES (dqddq, 0, 0, 0)
+                            ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:42:32	172.18.0.1	error	[403]	invalid query (ERROR:  column "dqddq" does not exist
+LINE 3:             VALUES (dqddq, 0, 0, 0)
+                            ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES (dqddq, 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:45:22	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  column &quot;dqddq&quot; does not exist
+LINE 3:             VALUES (dqddq, 0, 0, 0)
+                            ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:45:22	172.18.0.1	error	[403]	invalid query (ERROR:  column "dqddq" does not exist
+LINE 3:             VALUES (dqddq, 0, 0, 0)
+                            ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES (dqddq, 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:46:11	172.18.0.1	warning	[2]	Undefined property: pgsqlDbConnection::$quote
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	38
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:46:11	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  column &quot;dqddq&quot; does not exist
+LINE 3:             VALUES ((dqddq), 0, 0, 0)
+                             ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:46:11	172.18.0.1	error	[403]	invalid query (ERROR:  column "dqddq" does not exist
+LINE 3:             VALUES ((dqddq), 0, 0, 0)
+                             ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ((dqddq), 0, 0, 0)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:54:12	172.18.0.1	warning	[2]	Undefined variable $longitude
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	38
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:54:12	172.18.0.1	warning	[2]	Undefined variable $altitude
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	38
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:54:12	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3:             VALUES ('TODO', 404, , )
+                                         ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 09:54:12	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3:             VALUES ('TODO', 404, , )
+                                         ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('TODO', 404, , )
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 38
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:13:25	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(TODO) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:13:25	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(TODO) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('TODO', 404, 404, 404)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:27:55	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(TODO) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:27:55	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(TODO) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('TODO', 404, 404, 404)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:48:54	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(TODO) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 10:48:54	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(TODO) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('TODO', 404, 404, 404)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'TODO',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 11:23:13	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(Mont Blanc) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'Mont Blanc',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 11:23:13	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(Mont Blanc) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('Mont Blanc', 404, 404, 404)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'Mont Blanc',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 13:40:50	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(sff) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sff',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 13:40:50	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(sff) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('sff', 404, 404, 404)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sff',   'latitude' => '404',   'longitude' => '404',   'altitude' => '404', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 13:50:43	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  column &quot;sfsfsf&quot; does not exist
+LINE 3:             WHERE nom = sfsfsf
+                                ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	DELETE: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sfsfsf', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 62
+	3	sommetsCtrl->delete()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 13:50:43	172.18.0.1	error	[403]	invalid query (ERROR:  column "sfsfsf" does not exist
+LINE 3:             WHERE nom = sfsfsf
+                                ^(
+            DELETE FROM core.sommets
+            WHERE nom = sfsfsf))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	DELETE: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sfsfsf', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 62
+	2	sommetsCtrl->delete()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:26:40	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3:             VALUES ('fssf', , , )
+                                    ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'fssf',   'latitude' => '', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:26:40	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3:             VALUES ('fssf', , , )
+                                    ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('fssf', , , )
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'fssf',   'latitude' => '', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:26:48	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3:             VALUES ('fssf', 546, , )
+                                         ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'fssf',   'latitude' => '546', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:26:48	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3:             VALUES ('fssf', 546, , )
+                                         ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('fssf', 546, , )
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'fssf',   'latitude' => '546', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:27:38	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3:             VALUES ('sffs', , 45, 45)
+                                    ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sffs',   'latitude' => '',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:27:38	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3:             VALUES ('sffs', , 45, 45)
+                                    ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('sffs', , 45, 45)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sffs',   'latitude' => '',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:29:21	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3:             VALUES ('ggszgsg', , 45, 45)
+                                       ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'ggszgsg',   'latitude' => '',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:29:21	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3:             VALUES ('ggszgsg', , 45, 45)
+                                       ^(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('ggszgsg', , 45, 45)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'ggszgsg',   'latitude' => '',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:48:10	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;latitude&quot;
+LINE 3:             SET nom ='ghedhsgsg'latitude = 76767676, longitu...
+                                        ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	PUT: array (   'module' => 'core',   'action' => 'sommets:',   'nom_ancien' => 'ghedhsgsg',   'nom' => 'ghedhsgsg',   'latitude' => '76767676',   'longitude' => '7676766',   'altitude' => '767676', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 60
+	3	sommetsCtrl->put()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:48:10	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near "latitude"
+LINE 3:             SET nom ='ghedhsgsg'latitude = 76767676, longitu...
+                                        ^(
+            UPDATE core.sommets
+            SET nom ='ghedhsgsg'latitude = 76767676, longitude = 7676766, altitude = 767676
+            WHERE nom = 'ghedhsgsg'))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	PUT: array (   'module' => 'core',   'action' => 'sommets:',   'nom_ancien' => 'ghedhsgsg',   'nom' => 'ghedhsgsg',   'latitude' => '76767676',   'longitude' => '7676766',   'altitude' => '767676', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 60
+	2	sommetsCtrl->put()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:49:22	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 3: ...dhsgsg', latitude = 7676767699999999, longitude = , altitude...
+                                                             ^
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	PUT: array (   'module' => 'core',   'action' => 'sommets:',   'nom_ancien' => 'ghedhsgsg',   'nom' => 'ghedhsgsg',   'latitude' => '7676767699999999',   'longitude' => '',   'altitude' => '767676', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 60
+	3	sommetsCtrl->put()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 14:49:22	172.18.0.1	error	[403]	invalid query (ERROR:  syntax error at or near ","
+LINE 3: ...dhsgsg', latitude = 7676767699999999, longitude = , altitude...
+                                                             ^(
+            UPDATE core.sommets
+            SET nom ='ghedhsgsg', latitude = 7676767699999999, longitude = , altitude = 767676
+            WHERE nom = 'ghedhsgsg'))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	PUT: array (   'module' => 'core',   'action' => 'sommets:',   'nom_ancien' => 'ghedhsgsg',   'nom' => 'ghedhsgsg',   'latitude' => '7676767699999999',   'longitude' => '',   'altitude' => '767676', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 60
+	2	sommetsCtrl->put()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 15:00:50	172.18.0.1	error	[0]	Undefined constant "succes"
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	76
+	url: /index.php/sommets
+	DELETE: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'yetztz', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->delete()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 15:01:06	172.18.0.1	error	[0]	Undefined constant "succes"
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	76
+	url: /index.php/sommets
+	DELETE: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'dqdd', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->delete()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 15:01:17	172.18.0.1	error	[0]	Undefined constant "succes"
+	at: /var/www/html/app/modules/core/controllers/sommets.classic.php	76
+	url: /index.php/sommets
+	DELETE: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'altitude', )
+	referer: http://localhost/
+
+	0	sommetsCtrl->delete()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	1	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 20:33:32	172.18.0.1	warning	[2]	pg_pconnect(): Unable to connect to PostgreSQL server: could not translate host name &quot;mountainpeak-main-db-1&quot; to address: Temporary failure in name resolution
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	164
+	url: /index.php/sommets
+	GET: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_pconnect()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 164
+	1	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	2	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	3	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	4	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	5	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	6	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	7	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	8	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 15
+	9	sommetsCtrl->get()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 20:33:33	172.18.0.1	error	[402]	error during the connection mountainpeak-main-db-1
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	180
+	url: /index.php/sommets
+	GET: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	1	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	2	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	3	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	4	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	5	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	6	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	7	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 15
+	8	sommetsCtrl->get()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:12:41	172.18.0.1	warning	[2]	pg_pconnect(): Unable to connect to PostgreSQL server: could not translate host name &quot;mountainpeak-main-db-1&quot; to address: Temporary failure in name resolution
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	164
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'qdqd',   'latitude' => '45',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pg_pconnect()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 164
+	1	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	2	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	3	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	4	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	5	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	6	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	7	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	8	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	9	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:12:41	172.18.0.1	error	[402]	error during the connection mountainpeak-main-db-1
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	180
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'qdqd',   'latitude' => '45',   'longitude' => '45',   'altitude' => '45', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	1	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	2	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	3	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	4	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	5	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	6	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	7	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 36
+	8	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:12:41	172.18.0.1	warning	[2]	pg_pconnect(): Unable to connect to PostgreSQL server: could not translate host name &quot;mountainpeak-main-db-1&quot; to address: Temporary failure in name resolution
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	164
+	url: /index.php/sommets
+	GET: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pg_pconnect()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 164
+	1	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	2	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	3	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	4	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	5	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	6	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	7	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	8	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 15
+	9	sommetsCtrl->get()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	10	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:12:41	172.18.0.1	error	[402]	error during the connection mountainpeak-main-db-1
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	180
+	url: /index.php/sommets
+	GET: array (   'module' => 'core',   'action' => 'sommets:', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_connect()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 106
+	1	jDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 38
+	2	pgsqlDbConnection->__construct()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jAppInstance.php : 405
+	3	jAppInstance->loadPlugin()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jApp.class.php : 321
+	4	jApp::__callStatic()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 187
+	5	jDb::_createConnector()	/var/www/html/vendor/jelix/jelix/lib/jelix/utils/jProfiles.class.php : 147
+	6	jProfiles::getOrStoreInPool()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDb.class.php : 132
+	7	jDb::getConnection()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 15
+	8	sommetsCtrl->get()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	9	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:31:24	172.18.0.1	warning	[2]	pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;nom_ukey&quot;
+DETAIL:  Key (nom)=(sfsfsf) already exists.
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	207
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sfsfsf',   'latitude' => '46',   'longitude' => '64646',   'altitude' => '46464', )
+	referer: http://localhost/
+
+	0	pg_query()	/var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php : 207
+	1	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	2	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	3	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	4	jCoordinator->process()	/var/www/html/index.php : 19
+
+
+2023-02-01 21:31:24	172.18.0.1	error	[403]	invalid query (ERROR:  duplicate key value violates unique constraint "nom_ukey"
+DETAIL:  Key (nom)=(sfsfsf) already exists.(
+            INSERT INTO core.sommets (nom , latitude, longitude, altitude)
+            VALUES ('sfsfsf', 46, 64646, 46464)
+        ))
+	at: /var/www/html/vendor/jelix/jelix/lib/jelix/plugins/db/pgsql/pgsql.dbconnection.php	211
+	url: /index.php/sommets
+	POST: array (   'module' => 'core',   'action' => 'sommets:',   'nom' => 'sfsfsf',   'latitude' => '46',   'longitude' => '64646',   'altitude' => '46464', )
+	referer: http://localhost/
+
+	0	pgsqlDbConnection->_doQuery()	/var/www/html/vendor/jelix/jelix/lib/jelix/db/jDbConnection.class.php : 159
+	1	jDbConnection->query()	/var/www/html/app/modules/core/controllers/sommets.classic.php : 40
+	2	sommetsCtrl->post()	/var/www/html/vendor/jelix/jelix/lib/jelix/core/jCoordinator.class.php : 266
+	3	jCoordinator->process()	/var/www/html/index.php : 19
+
+
